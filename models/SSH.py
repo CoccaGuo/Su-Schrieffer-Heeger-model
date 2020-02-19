@@ -46,22 +46,6 @@ def H_domain_wall_delta_hopping1(t1, t2, L, delta, pos):
     res[2 * pos - 1, 2 * pos] = delta
     return res
 
-def H_domain_wall_delta_hopping2(t1l, t1r, t2, L, pos):
-    """
-    Hamiltonian of a domain wall system of SSH model with a delta gap in it
-    :param t1l: intracell hopping left side
-    :param t2: intercell hopping
-    :param L: SSH string length
-    :param t1r: intracell hopping right side
-    :param pos: position of the domain wall,e.g input 3 means:
-        a(1)--t1l±γ--b(2)..t2..a(2)--t1l±γ--b(2)..t2..a(3)--t1l±γ--b(3)..t2..a(4)--t1r±γ--b(4)..t2..a(5)--...
-    :return: hamiltonian
-    """
-    return np.block([
-        [H(t1l, t2, pos), np.zeros((2 * pos, 2 * (L - pos)))],
-        [np.zeros((2 * (L - pos), 2 * pos)), H(t1r, t2, L - pos)]
-    ])
-
 
 
 def energy_spectrum(t2, L):
