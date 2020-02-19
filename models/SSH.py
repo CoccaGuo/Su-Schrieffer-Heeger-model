@@ -4,49 +4,64 @@ import matplotlib.pyplot as plt
 plt.rcParams['figure.dpi'] = 300  # dpi of the pictures
 
 
-def H(t1, t2, L):
+class SSH:
     """
-    gives out a Hamiltonian of SSH model
-    :param t1: intracell hopping
-    :param t2: intercell hopping
-    :param L: SSH string length
-    :return: hamiltonian
+    Su-Schrieffer-Heeger(SSH) model: A-B sublattice
+    A--B...A--B...A--B... ...
+     length: equals to N, the length of the lattice.
+     t1: intracell
+     t2: intercell
+        --l: 链左侧
+        --r: 链右侧
+        --p: 左侧向右侧跳跃
+        --m: 右侧向左侧跳跃
+     r:stagger虚化学势
+        --l: 链左侧
+        --r: 链右侧
+        --a:作用在A格子上
+        --b:作用在B格子上
+    pos: 左右分隔位置
+    delta: 分隔宽度
     """
-    N = 2 * L
-    if isinstance(t1, complex) or isinstance(t2, complex):
-        H = np.zeros((N, N), dtype='complex')
-    else:
-        H = np.zeros((N, N))
-    for k in range(0, N - 1):
-        if k % 2 == 0:
-            H[k, k + 1] = t1
-            H[k + 1, k] = t1
-        else:
-            H[k, k + 1] = t2
-            H[k + 1, k] = t2
-    return H
+    length = 20
+    t1lp = 1
+    t1lm = 1
+    t2lp = 1
+    t2lm = 1
+    rla = 0j
+    rlb = 0j
+    pos = length // 2
+    delta = 1
+    t1rp = 1
+    t1rm = 1
+    t2rp = 1
+    t2rm = 1
+    rra = 0j
+    rrb = 0j
 
+    @staticmethod
+    def __simple_hamiltonian(t1p, t1m, t2p, t2m, ra, rb, length, is_complex):
+        """
+        a simple SSH model without gap and domaining wall.
+        :param is_complex: if is_complex = true, returns a complex matrix.
+        :return: a simple SSH hamiltonian
+        """
+        hamil = np.zeros((2*length, 2*length), dtype='complex') if is_complex else np.zeros((2*length, 2*length))
+        for k in range(0, 2*length - 1):
+            hamil[k, k + 1], hamil[k + 1, k], hamil[k, k] = t1p, t1m, ra if k % 2 == 0 else t2p, t2m, rb
+        return hamil
 
-def H_domain_wall_delta_hopping1(t1, t2, L, delta, pos):
-    """
-    Hamiltonian of a domain wall system of SSH model with a delta gap in it
-    :param t1: intracell hopping
-    :param t2: intercell hopping
-    :param L: SSH string length
-    :param delta: hopping strength
-    :param pos: position of the delta-wall,e.g input 3 means:
-        a(1)--t1--b(2)..t2..a(2)--t1--b(2)..t2..a(3)--t1--b(3) delta b(4)..t2..a(4)--t1--b(5)--...
-    :return: hamiltonian
-    """
-    res = np.block([
-        [H(t1, t2, pos), np.zeros((2 * pos, 2 * (L - pos)))],
-        [np.zeros((2 * (L - pos), 2 * pos)), H(t2, t1, L - pos)]
-    ])
-    res[2 * pos, 2 * pos - 1] = delta  # don't forget that python counts from zero
-    res[2 * pos - 1, 2 * pos] = delta
-    return res
-
-
+    def hamiltonian(_):
+        is_complex = False if _.rla == 0 and _.rlb == 0 and _.rra == 0 and _.rrb == 0 else True
+        hamil = np.block([
+            [_.__simple_hamiltonian(_.t1lp, _.t1lm, _.t2lp, _.t2lm, _.rla, _.rlb, _.pos, is_complex),
+             np.zeros((2 * _.pos, 2 * (_.length - _.pos)))],
+            [np.zeros((2 * (_.length - _.pos), 2 * _.pos)),
+             _.__simple_hamiltonian(_.t1rp, _.t1rm, _.t2rp, _.t2rm, _.rra, _.rrb, _.length - _.pos, is_complex)]
+        ])
+        hamil[2 * _.pos, 2 * _.pos - 1] = _.delta  # don't forget that python counts from zero
+        hamil[2 * _.pos - 1, 2 * _.pos] = _.delta
+        return hamil
 
 def energy_spectrum(t2, L):
     """
@@ -70,6 +85,5 @@ def energy_spectrum(t2, L):
 
 
 if __name__ == '__main__':
-    # print(H(0.5, 1, 10))
-    # energy_spectrum(1, 10)
-    print(H_domain_wall_delta_hopping2(0.5, 1, 4, 2, 2))
+    chain = SSH()
+    print(chain.hamiltonian())
