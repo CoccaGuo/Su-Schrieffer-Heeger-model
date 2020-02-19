@@ -91,6 +91,9 @@
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/python.app/Contents/MacOS/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -151,6 +154,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="128" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1580449966796" />
+    <state x="320" y="128" key="#Notifications" timestamp="1582099152094">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="128" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1582099152094" />
     <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581865327713">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -179,10 +186,18 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580451197062" />
+    <state x="497" y="190" key="RollbackChangesDialog" timestamp="1582099167186">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="497" y="190" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099167186" />
     <state x="268" y="100" key="SettingsEditor" timestamp="1581864910362">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="268" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581864910362" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1582099103139">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1582099103139" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1581864829021">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
