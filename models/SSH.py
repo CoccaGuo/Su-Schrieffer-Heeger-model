@@ -72,26 +72,48 @@ class SSH:
         return hamil
 
 
+    def wavefunction(self):
 
-def energy_spectrum(t2, L):
-    """
-    gives out an energy spectrum of SSH models (in Hermitian case)
-    t1 changes from -2 to 2
-    usage: energy_spectrum(1, 100)
 
-    :param t2: intercell hopping
-    :param L: string length
-    :return: no parameters but a plot figure
-    """
-    N = 2 * L
-    energy = np.zeros((N, 400))
-    k = 0
-    for t1 in np.arange(-2, 2, 0.01):
-        H = H(t1, t2, L)
-        energy[:, k], _ = np.linalg.eig(H)
-        k = k + 1
-    plt.plot(np.arange(-2, 2, 0.01), energy.T, 'k.', markersize=1)
-    plt.show()
+
+
+
+    # def energy_spectrum(self, t1s, t1e, resolution=0.01):
+    #     """
+    #     gives out the energy spectra of a certain ssh chain.
+    #
+    #
+    #     :param t1s: the beginning value of t1
+    #     :param t1e: the end value of t1
+    #     :return:
+    #     """
+    #     res = 1/resolution
+    #     N = 2*self.length
+    #     energy = np.zeros((N, res*np.abs(t1e - t1s)))
+    #     k = 0
+    #     for t1 in np.arange(t1s, t1e, res):
+    #         pass
+
+
+# def energy_spectrum(t2, L):
+#     """
+#     gives out an energy spectrum of SSH models (in Hermitian case)
+#     t1 changes from -2 to 2
+#     usage: energy_spectrum(1, 100)
+#
+#     :param t2: intercell hopping
+#     :param L: string length
+#     :return: no parameters but a plot figure
+#     """
+#     N = 2 * L
+#     energy = np.zeros((N, 400))
+#     k = 0
+#     for t1 in np.arange(-2, 2, 0.01):
+#         H = H(t1, t2, L)
+#         energy[:, k], _ = np.linalg.eig(H)
+#         k = k + 1
+#     plt.plot(np.arange(-2, 2, 0.01), energy.T, 'k.', markersize=1)
+#     plt.show()
 
 
 if __name__ == '__main__':
