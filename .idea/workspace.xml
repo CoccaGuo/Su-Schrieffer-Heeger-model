@@ -172,7 +172,8 @@
       <workItem from="1581863171928" duration="195000" />
       <workItem from="1581863996353" duration="12000" />
       <workItem from="1581864827898" duration="6840000" />
-      <workItem from="1582099031830" duration="7551000" />
+      <workItem from="1582099031830" duration="7905000" />
+      <workItem from="1582158958435" duration="3045000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -199,7 +200,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -223,6 +226,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1581865327713" />
+    <state x="533" y="186" key="#com.intellij.ide.util.MemberChooser" timestamp="1582169150221">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="533" y="186" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1582169150221" />
     <state x="301" y="65" key="CommitChangelistDialog2" timestamp="1582099801848">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -259,15 +266,19 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="268" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582099641718" />
+    <state x="100" y="123" width="1240" height="677" key="ShowDiffWithBranchDialog" timestamp="1582161013967">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="677" key="ShowDiffWithBranchDialog/0.23.1440.877@0.23.1440.877" timestamp="1582161013967" />
     <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1582099938901">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1582099938901" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1581864829021">
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582158960581">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/-1194.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1579083610062" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1581864829021" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582158960581" />
     <state x="414" y="261" key="git4idea.merge.GitPullDialog" timestamp="1582099591870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

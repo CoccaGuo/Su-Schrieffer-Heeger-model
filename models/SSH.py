@@ -23,45 +23,55 @@ class SSH:
     pos: 左右分隔位置
     delta: 分隔宽度
     """
-    length = 20
-    t1lp = 1
-    t1lm = 1
-    t2lp = 1
-    t2lm = 1
-    rla = 0j
-    rlb = 0j
-    pos = length // 2
-    delta = 1
-    t1rp = 1
-    t1rm = 1
-    t2rp = 1
-    t2rm = 1
-    rra = 0j
-    rrb = 0j
+
+    def __init__(self, length=20, t1lp=1, t1lm=1, t2lp=1, t2lm=1, rla=0, rlb=0, pos=0, delta=1, t1rp=1, t1rm=1, t2rp=1,
+                 t2rm=1, rra=0, rrb=0):
+        self.length = length
+        self.t1lp = t1lp
+        self.t1lm = t1lm
+        self.t2lp = t2lp
+        self.t2lm = t2lm
+        self.rla = rla
+        self.rlb = rlb
+        self.pos = pos
+        self.delta = delta
+        self.t1rp = t1rp
+        self.t1rm = t1rm
+        self.t2rp = t2rp
+        self.t2rm = t2rm
+        self.rra = rra
+        self.rrb = rrb
 
     @staticmethod
     def __simple_hamiltonian(t1p, t1m, t2p, t2m, ra, rb, length, is_complex):
         """
-        a simple SSH model without gap and domaining wall.
+        a simple SSH model without domaining wall.
         :param is_complex: if is_complex = true, returns a complex matrix.
         :return: a simple SSH hamiltonian
         """
-        hamil = np.zeros((2*length, 2*length), dtype='complex') if is_complex else np.zeros((2*length, 2*length))
-        for k in range(0, 2*length - 1):
-            hamil[k, k + 1], hamil[k + 1, k], hamil[k, k] = t1p, t1m, ra if k % 2 == 0 else t2p, t2m, rb
+        hamil = np.zeros((2 * length, 2 * length), dtype='complex') if is_complex else np.zeros(
+            (2 * length, 2 * length))
+        for k in range(0, 2 * length - 1):
+            hamil[k + 1, k + 1] = rb
+            if k % 2 == 0:
+                hamil[k, k + 1], hamil[k + 1, k], hamil[k, k] = t1p, t1m, ra
+            else:
+                hamil[k, k + 1], hamil[k + 1, k], hamil[k, k] = t2p, t2m, rb
         return hamil
 
-    def hamiltonian(_):
-        is_complex = False if _.rla == 0 and _.rlb == 0 and _.rra == 0 and _.rrb == 0 else True
+    def hamiltonian(self):
+        is_complex = False if self.rla == 0 and self.rlb == 0 and self.rra == 0 and self.rrb == 0 else True
         hamil = np.block([
-            [_.__simple_hamiltonian(_.t1lp, _.t1lm, _.t2lp, _.t2lm, _.rla, _.rlb, _.pos, is_complex),
-             np.zeros((2 * _.pos, 2 * (_.length - _.pos)))],
-            [np.zeros((2 * (_.length - _.pos), 2 * _.pos)),
-             _.__simple_hamiltonian(_.t1rp, _.t1rm, _.t2rp, _.t2rm, _.rra, _.rrb, _.length - _.pos, is_complex)]
+            [self.__simple_hamiltonian(self.t1lp, self.t1lm, self.t2lp, self.t2lm, self.rla, self.rlb, self.pos, is_complex),
+             np.zeros((2 * self.pos, 2 * (self.length - self.pos)))],
+            [np.zeros((2 * (self.length - self.pos), 2 * self.pos)),
+             self.__simple_hamiltonian(self.t1rp, self.t1rm, self.t2rp, self.t2rm, self.rra, self.rrb, self.length - self.pos, is_complex)]
         ])
-        hamil[2 * _.pos, 2 * _.pos - 1] = _.delta  # don't forget that python counts from zero
-        hamil[2 * _.pos - 1, 2 * _.pos] = _.delta
+        hamil[2 * self.pos, 2 * self.pos - 1] = self.delta  # don't forget that python counts from zero
+        hamil[2 * self.pos - 1, 2 * self.pos] = self.delta
         return hamil
+
+
 
 def energy_spectrum(t2, L):
     """
@@ -85,5 +95,5 @@ def energy_spectrum(t2, L):
 
 
 if __name__ == '__main__':
-    chain = SSH()
+    chain = SSH(length=3, pos=1, delta=2, t1lp=0.5, t1lm=-0.5, rra=0.1j, rrb=-0.1j)
     print(chain.hamiltonian())
