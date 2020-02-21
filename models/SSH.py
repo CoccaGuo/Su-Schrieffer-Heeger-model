@@ -1,75 +1,94 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+from scipy import linalg
 plt.rcParams['figure.dpi'] = 300  # dpi of the pictures
 
 
-def H(t1, t2, L):
+class SSH:
     """
-    gives out a Hamiltonian of SSH model
-    :param t1: intracell hopping
-    :param t2: intercell hopping
-    :param L: SSH string length
-    :return: hamiltonian
+    Su-Schrieffer-Heeger(SSH) model: A-B sublattice
+    A--B...A--B...A--B... ...
+     length: equals to N, the length of the lattice.
+     t1: intracell
+     t2: intercell
+        --l: 链左侧
+        --r: 链右侧
+        --p: 左侧向右侧跳跃
+        --m: 右侧向左侧跳跃
+     r:stagger虚化学势
+        --l: 链左侧
+        --r: 链右侧
+        --a:作用在A格子上
+        --b:作用在B格子上
+    pos: 左右分隔位置
+    delta: 分隔宽度
     """
-    N = 2 * L
-    if isinstance(t1, complex) or isinstance(t2, complex):
-        H = np.zeros((N, N), dtype='complex')
-    else:
-        H = np.zeros((N, N))
-    for k in range(0, N - 1):
-        if k % 2 == 0:
-            H[k, k + 1] = t1
-            H[k + 1, k] = t1
-        else:
-            H[k, k + 1] = t2
-            H[k + 1, k] = t2
-    return H
 
+    def __init__(self, length=20, t1lp=1, t1lm=1, t2lp=1, t2lm=1, rla=0, rlb=0, pos=0, delta=1, t1rp=1, t1rm=1, t2rp=1,
+                 t2rm=1, rra=0, rrb=0, bloch=False):
+        self.length = length
+        self.t1lp = t1lp
+        self.t1lm = t1lm
+        self.t2lp = t2lp
+        self.t2lm = t2lm
+        self.rla = rla
+        self.rlb = rlb
+        self.pos = pos
+        self.delta = delta
+        self.t1rp = t1rp
+        self.t1rm = t1rm
+        self.t2rp = t2rp
+        self.t2rm = t2rm
+        self.rra = rra
+        self.rrb = rrb
+        self.bloch = bloch
 
-def H_domain_wall_delta_hopping1(t1, t2, L, delta, pos):
-    """
-    Hamiltonian of a domain wall system of SSH model with a delta gap in it
-    :param t1: intracell hopping
-    :param t2: intercell hopping
-    :param L: SSH string length
-    :param delta: hopping strength
-    :param pos: position of the delta-wall,e.g input 3 means:
-        a(1)--t1--b(2)..t2..a(2)--t1--b(2)..t2..a(3)--t1--b(3) delta b(4)..t2..a(4)--t1--b(5)--...
-    :return: hamiltonian
-    """
-    res = np.block([
-        [H(t1, t2, pos), np.zeros((2 * pos, 2 * (L - pos)))],
-        [np.zeros((2 * (L - pos), 2 * pos)), H(t2, t1, L - pos)]
-    ])
-    res[2 * pos, 2 * pos - 1] = delta  # don't forget that python counts from zero
-    res[2 * pos - 1, 2 * pos] = delta
-    return res
+    @staticmethod
+    def _simple_hamiltonian(t1p, t1m, t2p, t2m, ra, rb, length, is_complex):
+        """
+        a simple SSH model without domaining wall.
+        :param is_complex: if is_complex = true, returns a complex matrix.
+        :return: a simple SSH hamiltonian
+        """
+        hamil = np.zeros((2 * length, 2 * length), dtype='complex') if is_complex else np.zeros(
+            (2 * length, 2 * length))
+        for k in range(0, 2 * length - 1):
+            hamil[k + 1, k + 1] = rb
+            if k % 2 == 0:
+                hamil[k, k + 1], hamil[k + 1, k], hamil[k, k] = t1p, t1m, ra
+            else:
+                hamil[k, k + 1], hamil[k + 1, k], hamil[k, k] = t2p, t2m, rb
+        return hamil
 
+    @property
+    def hamiltonian(self):
+        is_complex = False if self.rla == 0 and self.rlb == 0 and self.rra == 0 and self.rrb == 0 else True
+        hamil = np.block([
+            [self._simple_hamiltonian(self.t1lp, self.t1lm, self.t2lp, self.t2lm, self.rla, self.rlb, self.pos,
+                                       is_complex),
+             np.zeros((2 * self.pos, 2 * (self.length - self.pos)))],
+            [np.zeros((2 * (self.length - self.pos), 2 * self.pos)),
+             self._simple_hamiltonian(self.t1rp, self.t1rm, self.t2rp, self.t2rm, self.rra, self.rrb,
+                                       self.length - self.pos, is_complex)]
+        ])
+        if self.pos != 0: # please specify the position if used
+            hamil[2 * self.pos, 2 * self.pos - 1] = self.delta  # don't forget that python counts from zero
+            hamil[2 * self.pos - 1, 2 * self.pos] = self.delta
+        if self.bloch:
+            hamil[2 * self.length - 1, 0] = self.t2rp
+            hamil[0, 2 * self.length - 1] = self.t2rm
+        return hamil
 
-
-def energy_spectrum(t2, L):
-    """
-    gives out an energy spectrum of SSH models (in Hermitian case)
-    t1 changes from -2 to 2
-    usage: energy_spectrum(1, 100)
-
-    :param t2: intercell hopping
-    :param L: string length
-    :return: no parameters but a plot figure
-    """
-    N = 2 * L
-    energy = np.zeros((N, 400))
-    k = 0
-    for t1 in np.arange(-2, 2, 0.01):
-        H = H(t1, t2, L)
-        energy[:, k], _ = np.linalg.eig(H)
-        k = k + 1
-    plt.plot(np.arange(-2, 2, 0.01), energy.T, 'k.', markersize=1)
-    plt.show()
+    @property
+    def wavefunction(self):
+        """
+        gives out the discrete value of the wavefunction matrix
+        :return: energy, vector
+        """
+        energy, vector = linalg.eig(self.hamiltonian)
+        return energy, vector
 
 
 if __name__ == '__main__':
-    # print(H(0.5, 1, 10))
-    # energy_spectrum(1, 10)
-    print(H_domain_wall_delta_hopping2(0.5, 1, 4, 2, 2))
+    chain = SSH(length=4, delta=3, t1rm=4,pos=2)
+    print(chain.hamiltonian)
