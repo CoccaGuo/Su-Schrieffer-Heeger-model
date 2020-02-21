@@ -1,19 +1,26 @@
-#!main function
-import sys
-
-sys.path.append('./models')
 import numpy as np
 import matplotlib.pyplot as plt
-import SSH
+from models import SSH
+
+plt.rcParams['figure.dpi'] = 300  # dpi of the pictures
 
 if __name__ == '__main__':
-    t1 = 0.5
-    t2 = 1
-    L = 40
-    delta = 2
-    pos = 20
-    h_dw = SSH.H_domain_wall_delta_hopping1(t1, t2, L, delta, pos)
-    ener, vect = np.linalg.eig(h_dw)
-    for ind in range(0, L):
-        plt.plot(vect[:, ind]**2,'k')
+    gamma = 0
+    t1l = -0.1
+    t1r = 1.5
+    t1lp = t1l - 0.5 * gamma
+    t1lm = t1l + 0.5 * gamma
+    t1rp = t1r - 0.5 * gamma
+    t1rm = t1r + 0.5 * gamma
+    chain = SSH.SSH(length=80,t1lp=t1lp,t1lm=t1lm,t1rp=t1rp,t1rm=t1rm,pos=40)
+    energy, vector = chain.wavefunction
+    vector_a = vector[::2,:]
+    vector_b = vector[:, 1::2]
+    plt.plot(np.abs(vector_a), 'k')
+    plt.plot(np.abs(vector_a[:,0]), 'r')
     plt.show()
+
+
+
+
+
