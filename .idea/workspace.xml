@@ -77,6 +77,9 @@
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -217,7 +220,9 @@
       <workItem from="1582255859424" duration="812000" />
       <workItem from="1582290654645" duration="482000" />
       <workItem from="1582343411965" duration="125000" />
-      <workItem from="1582450260154" duration="13167000" />
+      <workItem from="1582450260154" duration="15757000" />
+      <workItem from="1582536426620" duration="38000" />
+      <workItem from="1582536555884" duration="3707000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -331,11 +336,12 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="720" height="438" key="XDebugger.FullValuePopup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582207400054" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582450261444">
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582536555263">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/-1194.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1579083610062" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582450261444" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582536555263" />
     <state x="414" y="261" key="git4idea.merge.GitPullDialog" timestamp="1582099591870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
