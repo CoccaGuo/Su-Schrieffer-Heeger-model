@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764480d7-9b6b-49e6-bfc1-752d0effc73e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/test_SSH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/SSH.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/SSH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/test_SSH.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RunManager" selected="Python.env">
     <configuration name="SSH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -217,6 +218,10 @@
       <workItem from="1582099031830" duration="7905000" />
       <workItem from="1582158958435" duration="5371000" />
       <workItem from="1582206034926" duration="1764000" />
+      <workItem from="1582255859424" duration="812000" />
+      <workItem from="1582290654645" duration="482000" />
+      <workItem from="1582343411965" duration="125000" />
+      <workItem from="1582450260154" duration="10671000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -309,10 +314,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="497" y="190" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099167186" />
-    <state x="268" y="100" key="SettingsEditor" timestamp="1582099641718">
+    <state x="268" y="100" key="SettingsEditor" timestamp="1582461568723">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="268" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582099641718" />
+    <state x="268" y="100" key="SettingsEditor/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582461568723" />
     <state x="100" y="123" width="1240" height="677" key="ShowDiffWithBranchDialog" timestamp="1582161013967">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -329,11 +335,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="720" height="438" key="XDebugger.FullValuePopup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582207400054" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582158960581">
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582450261444">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/-1194.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1579083610062" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582158960581" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582450261444" />
     <state x="414" y="261" key="git4idea.merge.GitPullDialog" timestamp="1582099591870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

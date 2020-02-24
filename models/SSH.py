@@ -1,7 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy import linalg
-plt.rcParams['figure.dpi'] = 300  # dpi of the pictures
 
 
 class SSH:
@@ -65,13 +63,13 @@ class SSH:
         is_complex = False if self.rla == 0 and self.rlb == 0 and self.rra == 0 and self.rrb == 0 else True
         hamil = np.block([
             [self._simple_hamiltonian(self.t1lp, self.t1lm, self.t2lp, self.t2lm, self.rla, self.rlb, self.pos,
-                                       is_complex),
+                                      is_complex),
              np.zeros((2 * self.pos, 2 * (self.length - self.pos)))],
             [np.zeros((2 * (self.length - self.pos), 2 * self.pos)),
              self._simple_hamiltonian(self.t1rp, self.t1rm, self.t2rp, self.t2rm, self.rra, self.rrb,
-                                       self.length - self.pos, is_complex)]
+                                      self.length - self.pos, is_complex)]
         ])
-        if self.pos != 0: # please specify the position if used
+        if self.pos != 0:  # please specify the position if used
             hamil[2 * self.pos, 2 * self.pos - 1] = self.delta  # don't forget that python counts from zero
             hamil[2 * self.pos - 1, 2 * self.pos] = self.delta
         if self.bloch:
@@ -90,5 +88,5 @@ class SSH:
 
 
 if __name__ == '__main__':
-    chain = SSH(length=4, delta=3, t1rm=4,pos=2)
+    chain = SSH(length=4, delta=3, t1rm=4, pos=2)
     print(chain.hamiltonian)
