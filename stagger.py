@@ -21,25 +21,23 @@ if __name__ == '__main__':
     gamma = 1.33
     t1l = - 0.1
     t1r = 1.5
-    t1lp = t1l + 0.5 * gamma
-    t1lm = t1l - 0.5 * gamma
-    t1rp = t1r + 0.5 * gamma
-    t1rm = t1r - 0.5 * gamma
+    ra = gamma*1j
+    rb = -gamma*1j
     Nl = 40
     Nr = 40
     N = Nl + Nr
-    chain = SSH.SSH(length=N, t1lp=t1lp, t1lm=t1lm, t1rp=t1rp, t1rm=t1rm, pos=Nl, bloch=True)  # bloch on
+    chain = SSH.SSH(length=N, t1lp=t1l, t1lm=t1l, t1rp=t1r, t1rm=t1r, rla=ra, rlb=rb, rra=ra, rrb=rb, pos=Nl, bloch=True)  # bloch on
     energy, vector = chain.wavefunction
     vector_a = vector[::2, :]
     vector_b = vector[1::2, :]
-    plt.plot(np.arange(1, N+1), np.abs(vector_b), 'k', LineWidth=0.8)  # a/b 转换
-    # print(np.where(np.abs(vector_b) == np.max(np.abs(vector_b))))
+    plt.plot(np.arange(1, N+1), np.abs(vector_a), 'k', LineWidth=0.8)  # a/b 转换
+    # print(np.where(np.abs(vector_b) == np.max(np.abs(vector_b)))) # index begin with 0
     # gamma         | 0  |  0.11  |  1.33   |
-    # vec_a/b index | 50 |   54   | 101/102 |
-    plt.plot(np.arange(1, N+1), np.abs(vector_b[:, 101]), 'g', LineWidth=1.5)  # a/b 转换
+    # vec_a/b index | ?  |   ?    |  46/51  |
+    plt.plot(np.arange(1, N+1), np.abs(vector_a[:, 46]), 'g', LineWidth=1.5)  # a/b 转换
     # psi_a_1 = 0.5255736661814411
     # psi_b_Nl = 0.525573666158743
-    plt.plot(np.arange(1, N+1), wave_func_on_ep_b(t1l+0.5*gamma, t1r+0.5*gamma, Nl, Nr, 0.758071672), 'rx')  # a/b 转换
+    plt.plot(np.arange(1, N+1), wave_func_on_ep_a(t1l, t1r, Nl, Nr, 0.7432734067238927), 'rx')  # a/b 转换
     plt.xlabel(r'$j$')  # 上一行 +/- 转换
-    plt.ylabel(r'$|\psi_{b,j}|$')  # a/b 转换
+    plt.ylabel(r'$|\psi_{a,j}|$')  # a/b 转换
     plt.show()

@@ -48,8 +48,7 @@ class SSH:
         :param is_complex: if is_complex = true, returns a complex matrix.
         :return: a simple SSH hamiltonian
         """
-        hamil = np.zeros((2 * length, 2 * length), dtype='complex') if is_complex else np.zeros(
-            (2 * length, 2 * length))
+        hamil = np.zeros((2 * length, 2 * length), dtype='complex')
         for k in range(0, 2 * length - 1):
             hamil[k + 1, k + 1] = rb
             if k % 2 == 0:
