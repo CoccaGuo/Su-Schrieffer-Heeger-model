@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764480d7-9b6b-49e6-bfc1-752d0effc73e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/effective_model_wall.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/effective_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/effective_model.py" afterDir="false" />
     </list>
@@ -38,9 +39,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="9fcd763d-82c0-4268-88e0-e9f045894713" />
-  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
       <set>
@@ -71,7 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -129,6 +127,9 @@
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -167,6 +168,9 @@
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/python.app/Contents/MacOS/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -283,6 +287,7 @@
       <workItem from="1582705079607" duration="2259000" />
       <workItem from="1582801026944" duration="111000" />
       <workItem from="1582879054842" duration="24678000" />
+      <workItem from="1582977733809" duration="4028000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -399,10 +404,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="497" y="190" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099167186" />
-    <state x="225" y="166" key="SettingsEditor" timestamp="1582948102501">
+    <state x="268" y="100" key="SettingsEditor" timestamp="1582980903944">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="268" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582640635403" />
+    <state x="268" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582980903944" />
     <state x="225" y="166" key="SettingsEditor/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582948102501" />
     <state x="100" y="123" width="1240" height="677" key="ShowDiffWithBranchDialog" timestamp="1582161013967">
       <screen x="0" y="23" width="1440" height="877" />
@@ -412,10 +417,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1582191495340" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1582971790782">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1582980865181">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1582641948536" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1582980865181" />
     <state x="320" y="203" key="Vcs.Push.Dialog.v2/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582971790782" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1582703475088">
       <screen x="0" y="23" width="1440" height="877" />
@@ -426,12 +431,12 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="205" y="175" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582958940505" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582879504125">
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1582977735172">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/-1194.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1579083610062" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582879504125" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582536555263" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977735172" />
     <state x="414" y="261" key="git4idea.merge.GitPullDialog" timestamp="1582099591870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
