@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764480d7-9b6b-49e6-bfc1-752d0effc73e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/effective_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/delta_E_unequal.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/delta_E_unequal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unequal.py" beforeDir="false" afterPath="$PROJECT_DIR$/unequal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/effective_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/effective_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,9 +167,6 @@
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/python.app/Contents/MacOS/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -287,7 +282,7 @@
       <workItem from="1582677259487" duration="2876000" />
       <workItem from="1582705079607" duration="2259000" />
       <workItem from="1582801026944" duration="111000" />
-      <workItem from="1582879054842" duration="20754000" />
+      <workItem from="1582879054842" duration="24678000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -360,46 +355,46 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="582" y="366" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1579256102675" />
-    <state width="558" height="285" key="GridCell.Tab.0.bottom" timestamp="1582941502148">
+    <state width="558" height="285" key="GridCell.Tab.0.bottom" timestamp="1582977400681">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582641994689" />
-    <state width="558" height="285" key="GridCell.Tab.0.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502148" />
-    <state width="558" height="285" key="GridCell.Tab.0.center" timestamp="1582941502147">
+    <state width="558" height="285" key="GridCell.Tab.0.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400681" />
+    <state width="558" height="285" key="GridCell.Tab.0.center" timestamp="1582977400681">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582641994689" />
-    <state width="558" height="285" key="GridCell.Tab.0.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502147" />
-    <state width="558" height="285" key="GridCell.Tab.0.left" timestamp="1582941502146">
+    <state width="558" height="285" key="GridCell.Tab.0.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400681" />
+    <state width="558" height="285" key="GridCell.Tab.0.left" timestamp="1582977400680">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582641994688" />
-    <state width="558" height="285" key="GridCell.Tab.0.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502146" />
-    <state width="558" height="285" key="GridCell.Tab.0.right" timestamp="1582941502147">
+    <state width="558" height="285" key="GridCell.Tab.0.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400680" />
+    <state width="558" height="285" key="GridCell.Tab.0.right" timestamp="1582977400681">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582641994689" />
-    <state width="558" height="285" key="GridCell.Tab.0.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502147" />
-    <state width="558" height="285" key="GridCell.Tab.1.bottom" timestamp="1582941502149">
+    <state width="558" height="285" key="GridCell.Tab.0.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400681" />
+    <state width="558" height="285" key="GridCell.Tab.1.bottom" timestamp="1582977400683">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
-    <state width="558" height="285" key="GridCell.Tab.1.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502149" />
-    <state width="558" height="285" key="GridCell.Tab.1.center" timestamp="1582941502148">
+    <state width="558" height="285" key="GridCell.Tab.1.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400683" />
+    <state width="558" height="285" key="GridCell.Tab.1.center" timestamp="1582977400682">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
-    <state width="558" height="285" key="GridCell.Tab.1.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502148" />
-    <state width="558" height="285" key="GridCell.Tab.1.left" timestamp="1582941502148">
+    <state width="558" height="285" key="GridCell.Tab.1.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400682" />
+    <state width="558" height="285" key="GridCell.Tab.1.left" timestamp="1582977400682">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
-    <state width="558" height="285" key="GridCell.Tab.1.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502148" />
-    <state width="558" height="285" key="GridCell.Tab.1.right" timestamp="1582941502149">
+    <state width="558" height="285" key="GridCell.Tab.1.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400682" />
+    <state width="558" height="285" key="GridCell.Tab.1.right" timestamp="1582977400682">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="570" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
-    <state width="558" height="285" key="GridCell.Tab.1.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582941502149" />
+    <state width="558" height="285" key="GridCell.Tab.1.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400682" />
     <state x="497" y="190" key="RollbackChangesDialog" timestamp="1582099167186">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -417,10 +412,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1582191495340" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1582641948536">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1582971790782">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1582641948536" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582971790782" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1582703475088">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -440,11 +436,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="414" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099591870" />
-    <state x="580" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1582891346611">
+    <state x="580" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1582975067351">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="580" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582122447522" />
-    <state x="580" y="213" width="670" height="676" key="search.everywhere.popup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582891346611" />
+    <state x="580" y="213" width="670" height="676" key="search.everywhere.popup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582975067351" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SSH_model$delta_E_unequal.coverage" NAME="delta_E_unequal Coverage Results" MODIFIED="1582622824742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
