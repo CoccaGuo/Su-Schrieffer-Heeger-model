@@ -36,8 +36,8 @@ if __name__ == '__main__':
     # print(np.where(np.abs(vector_b) == np.max(np.abs(vector_b))))
     # gamma         | 0  |  0.11  |  1.33   |
     # vec_a/b index | 50 |   54   | 101/102 |
-    plt.plot(np.arange(1, N+1), np.abs(vector_b[:, 106]), 'g', LineWidth=1.5)  # a/b 转换
-    plt.plot(np.arange(1, N+1), wave_func_on_ep_a(t1l+0.5*gamma, t1r+0.5*gamma, Nl, Nr, 0.758071672), 'rx')  # a/b 转换
+    plt.plot(np.arange(1, N+1), np.abs(vector_b[:, 139]), 'g', LineWidth=1.5)  # a/b 转换
+    plt.plot(np.arange(1, N+1), wave_func_on_ep_b(t1l+0.5*gamma, t1r+0.5*gamma, Nl, Nr, 0.7580638156518378), 'rx')  # a/b 转换
     plt.xlabel(r'$j$')  # 上一行 +/- 转换
     plt.ylabel(r'$|\psi_{b,j}|$')  # a/b 转换
     plt.show()
