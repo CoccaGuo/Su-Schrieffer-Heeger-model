@@ -8,13 +8,11 @@ mur = 0
 t1 = 0.7
 t2 = 1
 N = 80
-epsilon = 0.5 * (mul - mur)
-mu = 0.5 * (mul + mur)
 delta = (t1 ** 2 - t2 ** 2 - gamma ** 2) / t2 * (-(t1 ** 2 - gamma ** 2) / t2 ** 2) ** (N / 2)
-E = np.sqrt(epsilon ** 2 + delta ** 2)
-# np.where(np.abs(energy)==np.min(np.abs(energy)))
+E = np.sqrt(delta ** 2)
 e_mqN = np.sqrt((t1 + gamma) / (t2 - gamma)) ** N
-H_eff = np.array(([0, delta*e_mqN**(-1)],[delta*e_mqN, 0]))
+
+
 # chain = SSH.SSH(length=N, t1rp=t1 + gamma, t1rm=t1 - gamma, pos=0, bloch=False)
 # energy, vector = chain.wavefunction
 # vector_a = vector[::2, :]
