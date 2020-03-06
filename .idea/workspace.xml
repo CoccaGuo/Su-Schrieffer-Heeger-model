@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764480d7-9b6b-49e6-bfc1-752d0effc73e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_eff_hami_domaining.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eff_hami_sym.py" beforeDir="false" afterPath="$PROJECT_DIR$/eff_hami_sym.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/effective_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/effective_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/effective_model_wall.py" beforeDir="false" afterPath="$PROJECT_DIR$/effective_model_wall.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -79,7 +78,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.effective_model">
+  <component name="RunManager" selected="Python.test_eff_hami_domaining">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,32 +101,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="delta_E_unequal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="eff_hami_sym" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/delta_E_unequal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="eff_hami_sym" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SSH-model" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -147,6 +127,9 @@
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -225,13 +208,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_eff_hami_domaining" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SSH-model" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_eff_hami_domaining.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.effective_model" />
+        <item itemvalue="Python.test_eff_hami_domaining" />
         <item itemvalue="Python.effective_model_wall" />
+        <item itemvalue="Python.effective_model" />
         <item itemvalue="Python.eff_hami_sym" />
         <item itemvalue="Python.symbolcalc" />
-        <item itemvalue="Python.delta_E_unequal" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +287,8 @@
       <workItem from="1582977733809" duration="5460000" />
       <workItem from="1583049468035" duration="1015000" />
       <workItem from="1583281980660" duration="15644000" />
-      <workItem from="1583454443819" duration="5801000" />
+      <workItem from="1583454443819" duration="13523000" />
+      <workItem from="1583497235454" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -402,10 +405,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="497" y="190" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099167186" />
-    <state x="268" y="100" key="SettingsEditor" timestamp="1582980903944">
+    <state x="340" y="171" key="SettingsEditor" timestamp="1583492469401">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="268" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582980903944" />
+    <state x="340" y="171" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1583492469401" />
     <state x="225" y="166" key="SettingsEditor/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582948102501" />
     <state x="100" y="123" width="1240" height="677" key="ShowDiffWithBranchDialog" timestamp="1582161013967">
       <screen x="0" y="23" width="1440" height="877" />
@@ -429,12 +432,12 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="205" y="175" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582958940505" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1583454445438">
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1583497236991">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/-1194.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1579083610062" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1583454445438" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977735172" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1583497236991" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@1440.89.1194.811" timestamp="1583049493149" />
     <state x="414" y="261" key="git4idea.merge.GitPullDialog" timestamp="1582099591870">
       <screen x="0" y="23" width="1440" height="877" />

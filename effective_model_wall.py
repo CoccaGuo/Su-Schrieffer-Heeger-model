@@ -2,17 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 from models import SSH
 
-gamma = 0
+gamma = 0.2
 t1l = 0.5
 t1r = 1.5
 t2 = 1
-Nl = 10
-Nr = 10
-delta_l = (t1l ** 2 - t2 ** 2 - gamma ** 2) / t2 * (-(t1l ** 2 - gamma ** 2) / t2 ** 2) ** (Nl / 2)
+Nl = 40
+Nr = 40
+delta_l = 0.5*(t1l ** 2 - t2 ** 2 - gamma ** 2) / t2 * (-(t1l ** 2 - gamma ** 2) / t2 ** 2) ** (Nl / 2)
 E_l = np.sqrt(delta_l ** 2)
 e_q_l = np.sqrt((t1l - gamma) / (t1l + gamma))
 
-delta_r = (t1r ** 2 - t2 ** 2 - gamma ** 2) / t2 * (-(t1r ** 2 - gamma ** 2) / t2 ** 2) ** (Nr / 2)
+delta_r = 0.5*(t1r ** 2 - t2 ** 2 - gamma ** 2) / t2 * (-(t1r ** 2 - gamma ** 2) / t2 ** 2) ** (-Nr / 2)  #t1r>1, 把t1放到分母上后和验证结果一致
 E_r = np.sqrt(delta_r ** 2)
 e_q_r = np.sqrt((t1r - gamma) / (t1r + gamma))
 # 解析
@@ -51,7 +51,7 @@ plt.plot(np.arange(1, 2*N+1), np.abs(vector[:, i]), LineWidth=1)  # a/b 转换
 #plt.plot(np.arange(1, 2*Nl + 1), np.abs(psi_lm),'r',MarkerSize=3)
 plt.plot(np.arange(1, 2*Nl + 1), np.abs(psi_lp),'r',LineWidth=0.5,MarkerSize=3)
 #plt.plot(np.arange(2*Nl + 1, 2*N + 1), np.abs(psi_rm),'r',MarkerSize=3)
-plt.plot(np.arange(2*Nl + 1, 2*N + 1), np.abs(psi_rp),'r',LineWidth=0.5,MarkerSize=3)
+#plt.plot(np.arange(2*Nl + 1, 2*N + 1), np.abs(psi_rp),'r',LineWidth=0.5,MarkerSize=3)
 
 # plt.legend([fp, fm], [r'$\psi_+$', r'$\psi_-$'])
 # plt.ylabel(r'$|\psi|$')
