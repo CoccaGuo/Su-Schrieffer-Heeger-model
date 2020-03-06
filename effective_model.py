@@ -5,7 +5,7 @@ from models import SSH
 gamma = 0.1
 mul = 0
 mur = 0
-t1 = 0.5
+t1 = 1.5
 t2 = 1
 N = 60
 epsilon = 0.5 * (mul - mur)
