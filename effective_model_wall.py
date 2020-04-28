@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from models import SSH
 
-gamma = 0.2
+gamma = 0.0
 t1l = 0.5
 t1r = 1.5
 t2 = 1
@@ -16,11 +16,12 @@ delta_r = 0.5*(t1r ** 2 - t2 ** 2 - gamma ** 2) / t2 * (-(t1r ** 2 - gamma ** 2)
 E_r = np.sqrt(delta_r ** 2)
 e_q_r = np.sqrt((t1r - gamma) / (t1r + gamma))
 # 解析
+print('hello')
 
 NNl = np.sqrt(2)*np.sqrt(((1 - (t1l / t2) ** (2 * Nl)) / (1 - (t1l / t2) ** 2)))
 NNr = np.sqrt(2)*np.sqrt(((1 - (t1r / t2) ** (2 * Nr)) / (1 - (t1r / t2) ** 2)))
-b1l = np.kron((-t1l / t2 * e_q_l) ** (np.arange(1, Nl+1)-1), np.array([1, 0])) / NNl    # index begins in 0 but should be 1
-b1r = np.kron((-t1r / t2 * e_q_r) ** (np.arange(1, Nr+1)-1), np.array([1, 0])) / NNr    # index begins in 0 but should be 1
+b1l = np.kron((-t1l / t2 * e_q_l) ** (np.arange(1, Nl+1)-1), np.array([1, 0]))      / NNl    # index begins in 0 but should be 1
+b1r = np.kron((-t1r / t2 * e_q_r) ** (np.arange(1, Nr+1)-1), np.array([1, 0]))      / NNr    # index begins in 0 but should be 1
 b2l = np.kron((-t1l / (t2 * e_q_l)) ** (Nl - np.arange(1, Nl+1)), np.array([0, 1])) / NNl  # index begins in 0 but should be 1
 b2r = np.kron((-t1r / (t2 * e_q_r)) ** (Nr - np.arange(1, Nr+1)), np.array([0, 1])) / NNr  # index begins in 0 but should be 1
 

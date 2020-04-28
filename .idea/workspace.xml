@@ -2,35 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="764480d7-9b6b-49e6-bfc1-752d0effc73e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_eff_hami_domaining.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DomainingEff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/EffSSH.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/phase_gram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simplyadd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_eff_hami_domaining_via_t1l.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/effective_model.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/effective_model_wall.py" beforeDir="false" afterPath="$PROJECT_DIR$/effective_model_wall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/SSH.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/SSH.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/stagger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_eff_hami_domaining.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="SSH-model" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Unit Test" />
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
@@ -54,11 +48,11 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,7 +63,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -78,7 +72,81 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_eff_hami_domaining">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.simplyadd">
+    <configuration name="DomainingEff" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SSH-model" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DomainingEff.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EffSSH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SSH-model" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/EffSSH.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SSH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SSH-model" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/SSH.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,7 +169,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="eff_hami_sym" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,48 +182,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eff_hami_sym.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="effective_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SSH-model" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/effective_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="effective_model_wall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SSH-model" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/effective_model_wall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,29 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="symbolcalc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SSH-model" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/symbolcalc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_eff_hami_domaining" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="simplyadd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SSH-model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,7 +223,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_eff_hami_domaining.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simplyadd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,27 +232,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.env" />
+      <item itemvalue="Python.EffSSH" />
+      <item itemvalue="Python.demo" />
+      <item itemvalue="Python.DomainingEff" />
+      <item itemvalue="Python.SSH" />
+      <item itemvalue="Python.simplyadd" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_eff_hami_domaining" />
-        <item itemvalue="Python.effective_model_wall" />
-        <item itemvalue="Python.effective_model" />
-        <item itemvalue="Python.eff_hami_sym" />
-        <item itemvalue="Python.symbolcalc" />
+        <item itemvalue="Python.simplyadd" />
+        <item itemvalue="Python.DomainingEff" />
+        <item itemvalue="Python.SSH" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.EffSSH" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -288,7 +289,39 @@
       <workItem from="1583049468035" duration="1015000" />
       <workItem from="1583281980660" duration="15644000" />
       <workItem from="1583454443819" duration="13523000" />
-      <workItem from="1583497235454" duration="2167000" />
+      <workItem from="1583497235454" duration="4125000" />
+      <workItem from="1583637270783" duration="368000" />
+      <workItem from="1583637640918" duration="71000" />
+      <workItem from="1583639012281" duration="481000" />
+      <workItem from="1583737619186" duration="2293000" />
+      <workItem from="1583741377264" duration="4032000" />
+      <workItem from="1583826474124" duration="1666000" />
+      <workItem from="1583830151780" duration="138000" />
+      <workItem from="1583831115353" duration="2077000" />
+      <workItem from="1583842515532" duration="52000" />
+      <workItem from="1583913140481" duration="1303000" />
+      <workItem from="1584184499597" duration="3983000" />
+      <workItem from="1584500598237" duration="174000" />
+      <workItem from="1584530201438" duration="5000" />
+      <workItem from="1584836445718" duration="6457000" />
+      <workItem from="1584863310165" duration="2590000" />
+      <workItem from="1585128526188" duration="438000" />
+      <workItem from="1585228256320" duration="13000" />
+      <workItem from="1585960556010" duration="474000" />
+      <workItem from="1585963194134" duration="1050000" />
+      <workItem from="1585972730767" duration="600000" />
+      <workItem from="1585992408790" duration="850000" />
+      <workItem from="1586048210848" duration="6237000" />
+      <workItem from="1586079769282" duration="12438000" />
+      <workItem from="1586422568224" duration="3529000" />
+      <workItem from="1586740864607" duration="96000" />
+      <workItem from="1587194791470" duration="330000" />
+      <workItem from="1587198183534" duration="8651000" />
+      <workItem from="1587858579546" duration="961000" />
+      <workItem from="1587864557875" duration="1737000" />
+      <workItem from="1587868630664" duration="868000" />
+      <workItem from="1587957608554" duration="1122000" />
+      <workItem from="1588033611259" duration="570000" />
     </task>
     <task id="LOCAL-00001" summary="func originated methods of calc SSH model.">
       <created>1582099371140</created>
@@ -308,20 +341,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="func originated methods of calc SSH model." />
@@ -337,10 +369,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="128" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1582099152094" />
-    <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581865327713">
+    <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586422714688">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1581865327713" />
+    <state x="184" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1586422714688" />
     <state x="533" y="186" key="#com.intellij.ide.util.MemberChooser" timestamp="1582169150221">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -349,67 +381,76 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="217" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1582879637313" />
+    <state x="944" y="-643" key="#xdebugger.evaluate" timestamp="1586091841278">
+      <screen x="-267" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="944" y="-643" key="#xdebugger.evaluate/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586091841278" />
     <state x="301" y="65" key="CommitChangelistDialog2" timestamp="1582099801848">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="301" y="65" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582099801848" />
-    <state x="554" y="224" key="FileChooserDialogImpl" timestamp="1581864897905">
+    <state x="554" y="224" key="FileChooserDialogImpl" timestamp="1586423957715">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="554" y="224" key="FileChooserDialogImpl/0.23.1440.877@0.23.1440.877" timestamp="1581864897905" />
-    <state x="582" y="366" key="Github.ShareDialog" timestamp="1579256102675">
+    <state x="554" y="224" key="FileChooserDialogImpl/0.23.1440.877@0.23.1440.877" timestamp="1586423957715" />
+    <state width="1398" height="328" key="GridCell.Tab.0.bottom" timestamp="1587994760448">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="582" y="366" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1579256102675" />
-    <state width="558" height="285" key="GridCell.Tab.0.bottom" timestamp="1582977400681">
+    <state width="576" height="321" key="GridCell.Tab.0.bottom/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444364" />
+    <state width="1398" height="328" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587994760448" />
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1584863095196" />
+    <state width="1398" height="328" key="GridCell.Tab.0.center" timestamp="1587994760447">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582641994689" />
-    <state width="558" height="285" key="GridCell.Tab.0.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400681" />
-    <state width="558" height="285" key="GridCell.Tab.0.center" timestamp="1582977400681">
+    <state width="576" height="321" key="GridCell.Tab.0.center/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444364" />
+    <state width="1398" height="328" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1587994760447" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1584863095195" />
+    <state width="1398" height="328" key="GridCell.Tab.0.left" timestamp="1587994760447">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582641994689" />
-    <state width="558" height="285" key="GridCell.Tab.0.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400681" />
-    <state width="558" height="285" key="GridCell.Tab.0.left" timestamp="1582977400680">
+    <state width="576" height="321" key="GridCell.Tab.0.left/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444364" />
+    <state width="1398" height="328" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1587994760447" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1584863095195" />
+    <state width="1398" height="328" key="GridCell.Tab.0.right" timestamp="1587994760448">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582641994688" />
-    <state width="558" height="285" key="GridCell.Tab.0.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400680" />
-    <state width="558" height="285" key="GridCell.Tab.0.right" timestamp="1582977400681">
+    <state width="576" height="321" key="GridCell.Tab.0.right/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444364" />
+    <state width="1398" height="328" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1587994760448" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1584863095196" />
+    <state width="1398" height="328" key="GridCell.Tab.1.bottom" timestamp="1587994760449">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582641994689" />
-    <state width="558" height="285" key="GridCell.Tab.0.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400681" />
-    <state width="558" height="285" key="GridCell.Tab.1.bottom" timestamp="1582977400683">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="570" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
+    <state width="576" height="321" key="GridCell.Tab.1.bottom/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444366" />
+    <state width="1398" height="328" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587994760449" />
     <state width="558" height="285" key="GridCell.Tab.1.bottom/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400683" />
-    <state width="558" height="285" key="GridCell.Tab.1.center" timestamp="1582977400682">
+    <state width="1398" height="328" key="GridCell.Tab.1.center" timestamp="1587994760448">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
+    <state width="576" height="321" key="GridCell.Tab.1.center/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444365" />
+    <state width="1398" height="328" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1587994760448" />
     <state width="558" height="285" key="GridCell.Tab.1.center/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400682" />
-    <state width="558" height="285" key="GridCell.Tab.1.left" timestamp="1582977400682">
+    <state width="1398" height="328" key="GridCell.Tab.1.left" timestamp="1587994760448">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
+    <state width="576" height="321" key="GridCell.Tab.1.left/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444365" />
+    <state width="1398" height="328" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1587994760448" />
     <state width="558" height="285" key="GridCell.Tab.1.left/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400682" />
-    <state width="558" height="285" key="GridCell.Tab.1.right" timestamp="1582977400682">
+    <state width="1398" height="328" key="GridCell.Tab.1.right" timestamp="1587994760449">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="570" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1582641994690" />
+    <state width="576" height="321" key="GridCell.Tab.1.right/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586138444365" />
+    <state width="1398" height="328" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1587994760449" />
     <state width="558" height="285" key="GridCell.Tab.1.right/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582977400682" />
     <state x="497" y="190" key="RollbackChangesDialog" timestamp="1582099167186">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="497" y="190" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099167186" />
-    <state x="340" y="171" key="SettingsEditor" timestamp="1583492469401">
+    <state x="309" y="129" key="SettingsEditor" timestamp="1586740943936">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="340" y="171" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1583492469401" />
-    <state x="225" y="166" key="SettingsEditor/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582948102501" />
+    <state x="309" y="129" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1586740943936" />
+    <state x="300" y="195" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1586048220503" />
+    <state x="225" y="166" key="SettingsEditor/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1584863007539" />
     <state x="100" y="123" width="1240" height="677" key="ShowDiffWithBranchDialog" timestamp="1582161013967">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -423,35 +464,46 @@
     </state>
     <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1582980865181" />
     <state x="320" y="203" key="Vcs.Push.Dialog.v2/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582984403144" />
-    <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1582703475088">
+    <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1583741790048">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="720" height="438" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1582703475088" />
-    <state width="720" height="438" key="XDebugger.FullValuePopup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582207400054" />
+    <state width="720" height="438" key="XDebugger.FullValuePopup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1583741790048" />
     <state x="205" y="175" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1582958940505">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="205" y="175" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582958940505" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1583497236991">
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1586422568119">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/-1194.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1579083610062" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1583454445438" />
-    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1583497236991" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-177.-1057.1920.1057@-177.-1057.1920.1057" timestamp="1585992414749" />
+    <state x="232" y="-728" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586079776769" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1586422568119" />
+    <state x="499" y="352" key="com.intellij.ide.util.TipDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1586048211988" />
+    <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1584863311085" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog/1440.89.1194.811/0.23.1440.877@1440.89.1194.811" timestamp="1583049493149" />
+    <state x="497" y="158" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587198202337">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="497" y="158" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877@0.23.1440.877" timestamp="1587198202337" />
+    <state x="497" y="158" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1583741540450" />
     <state x="414" y="261" key="git4idea.merge.GitPullDialog" timestamp="1582099591870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="414" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1582099591870" />
-    <state x="580" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1582975067351">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="506" y="-828" width="894" height="815" key="search.everywhere.popup" timestamp="1586133082387">
+      <screen x="-267" y="-1057" width="1920" height="1057" />
     </state>
+    <state x="506" y="-828" width="894" height="815" key="search.everywhere.popup/0.23.1440.877/-267.-1057.1920.1057@-267.-1057.1920.1057" timestamp="1586133082387" />
     <state x="580" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582122447522" />
     <state x="580" y="213" width="670" height="676" key="search.everywhere.popup/1440.89.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1582975067351" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SSH_model$delta_E_unequal.coverage" NAME="delta_E_unequal Coverage Results" MODIFIED="1582622824742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/SSH_model$effective_model.coverage" NAME="effective_model Coverage Results" MODIFIED="1582941492484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SSH_model$simplyadd.coverage" NAME="simplyadd Coverage Results" MODIFIED="1588034240714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SSH_model$Unittests_in_demo_py.coverage" NAME="Unittests in demo.py Coverage Results" MODIFIED="1583748513731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SSH_model$Unittests_for_test_SSH_TestSSH.coverage" NAME="Unittests for test_SSH.TestSSH Coverage Results" MODIFIED="1582200666625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SSH_model$delta_E_unequal.coverage" NAME="delta_E_unequal Coverage Results" MODIFIED="1582622824742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SSH_model$phase_gram.coverage" NAME="phase_gram Coverage Results" MODIFIED="1586136301943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
 </project>

@@ -87,5 +87,8 @@ class SSH:
 
 
 if __name__ == '__main__':
-    chain = SSH(length=4, delta=3, t1rm=4, pos=2)
-    print(chain.hamiltonian)
+    import matplotlib.pyplot as plt
+    chain = SSH._simple_hamiltonian(1,1,0.5,0.5,0,0,40,True)
+    print(chain)
+    energy, vector = linalg.eig(chain)
+    plt.plot(np.abs(vector))

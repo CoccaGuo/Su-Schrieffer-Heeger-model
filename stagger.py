@@ -18,7 +18,7 @@ def wave_func_on_ep_b(t1l, t1r, Nl, Nr, psi_b_Nl):
 
 
 if __name__ == '__main__':
-    gamma = 1.33
+    gamma = 1.3
     t1l = - 0.1
     t1r = 1.5
     ra = gamma*1j
@@ -30,11 +30,17 @@ if __name__ == '__main__':
     energy, vector = chain.wavefunction
     vector_a = vector[::2, :]
     vector_b = vector[1::2, :]
+    # 自动确定边界态位置
+    i1 = np.where(np.abs(energy) == np.min(np.abs(energy)))
+    i = int(i1[0])
+    energy[i] = np.max(energy)
+    j1 = np.where(np.abs(energy) == np.min(np.abs(energy)))
+    j = int(j1[0])
     plt.plot(np.arange(1, N+1), np.abs(vector_a), 'k', LineWidth=0.8)  # a/b 转换
     # print(np.where(np.abs(vector_b) == np.max(np.abs(vector_b)))) # index begin with 0
     # gamma         | 0  |  0.11  |  1.33   |
     # vec_a/b index | ?  |   ?    |  46/51  |
-    plt.plot(np.arange(1, N+1), np.abs(vector_a[:, 46]), 'g', LineWidth=1.5)  # a/b 转换
+    plt.plot(np.arange(1, N+1), np.abs(vector_a[:, j-1]), 'g', LineWidth=1.5)  # a/b 转换
     # psi_a_1 = 0.5255736661814411
     # psi_b_Nl = 0.525573666158743
     plt.plot(np.arange(1, N+1), wave_func_on_ep_a(t1l, t1r, Nl, Nr, 0.7432734067238927), 'rx')  # a/b 转换
